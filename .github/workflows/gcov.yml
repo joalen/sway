@@ -21,7 +21,7 @@ jobs:
         if: runner.os == 'Linux'
         run: | 
           sudo apt-get update
-          sudo apt-get install -y meson libwlroots-dev libwlroots12t64 wayland wayland-protocols-dev wayland-protocols pcre2 pcre2-utils json-c pango1.0 pango1.0-tools pangomm pangomm2.48 cairo 
+          sudo apt-get install -y meson libwlroots-dev libwlroots12t64 waylandpp-dev wayland-utils wayland-protocols libpcre2-dev libjson-c-dev libcogl-pango-dev cairo-5c 
           
       - name: Build repository 
         run: | 
